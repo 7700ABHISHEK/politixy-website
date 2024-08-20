@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Politixy Website</title>
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap css -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- style css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header pt-3 d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="logo" width="100%" class="img-fluid">
+                </div>
+                <div class="menus d-lg-block d-none">
+                    <ul class="text-uppercase d-flex align-items-center fw-medium m-0 p-0 gap-4 font-roboto text-secondary">
+                        <li class="d-flex align-items-center ">
+                            <a href="#" class="text-decoration-none fw-bold text-danger">home</a>
+                            <span class="fs-3"><i class="ri-arrow-drop-down-line"></i></span>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-decoration-none text-black">about</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-decoration-none text-black">events</a>
+                        </li>
+                        <li class="d-flex align-items-center ">
+                            <a href="#" class="text-decoration-none text-black">pages</a>
+                            <span class="fs-3"><i class="ri-arrow-drop-down-line"></i></span>
+                        </li>
+                        <li class="d-flex align-items-center ">
+                            <a href="#" class="text-decoration-none text-black">news</a>
+                            <span class="fs-3"><i class="ri-arrow-drop-down-line"></i></span>
+                        </li>
+                        <li class="">
+                            <a href="#" class="text-decoration-none text-black">contact</a>
+                        </li>
+                        <button class="btn btn-danger py-3 px-4 fw-medium contribute-btn">Contribute</button>
+                    </ul>
+                </div>
+                <button class="btn d-lg-none d-block" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list fs-1"></i></button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                    aria-labelledby="offcanvasWithBothOptionsLabel">
+                    <div class="offcanvas-header">
+                        <div class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="menus">
+                            <ul class="text-uppercase fw-medium p-0 font-roboto text-secondary">
+                                <li class="d-flex align-items-center mb-3">
+                                    <a href="#" class="text-decoration-none fw-bold text-danger">home</a>
+                                    <span class="fs-4"><i class="ri-arrow-drop-down-line"></i></span>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none text-black">about</a>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none text-black">events</a>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <a href="#" class="text-decoration-none text-black">pages</a>
+                                    <span class="fs-4"><i class="ri-arrow-drop-down-line"></i></span>
+                                </li>
+                                <li class="d-flex align-items-center mb-3">
+                                    <a href="#" class="text-decoration-none text-black">news</a>
+                                    <span class="fs-4"><i class="ri-arrow-drop-down-line"></i></span>
+                                </li>
+                                <li class="mb-3">
+                                    <a href="#" class="text-decoration-none text-black">contact</a>
+                                </li>
+                                <button class="btn btn-danger py-3 px-4 fw-medium contribute-btn">Contribute</button>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
