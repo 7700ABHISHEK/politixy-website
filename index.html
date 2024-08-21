@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- glightbox cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
     <!-- Bootstrap css -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- style css -->
@@ -17,14 +19,15 @@
 
 <body>
 
-    <header>
+    <header id="header">
         <div class="container">
-            <div class="header pt-3 d-flex align-items-center justify-content-between">
+            <div class="header pt-3 pb-3 d-flex align-items-center justify-content-between">
                 <div class="logo">
                     <img src="./assets/images/logo.png" alt="logo" width="100%" class="img-fluid">
                 </div>
                 <div class="menus d-lg-block d-none">
-                    <ul class="text-uppercase d-flex align-items-center fw-medium m-0 p-0 gap-4 font-roboto text-secondary">
+                    <ul
+                        class="text-uppercase d-flex align-items-center fw-medium m-0 p-0 gap-4 font-roboto text-secondary">
                         <li class="d-flex align-items-center ">
                             <a href="#" class="text-decoration-none fw-bold text-danger">home</a>
                             <span class="fs-3"><i class="ri-arrow-drop-down-line"></i></span>
@@ -50,7 +53,8 @@
                     </ul>
                 </div>
                 <button class="btn d-lg-none d-block" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list fs-1"></i></button>
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                        class="bi bi-list fs-1"></i></button>
 
                 <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                     aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -93,7 +97,180 @@
         </div>
     </header>
 
+    <main>
+
+        <!-- Hero Section -->
+        <section id="cast-your-vote" class="hero-background">
+            <div class="container position-relative">
+                <div class="col-lg-8 m-auto">
+                    <div class="cast-your-vote text-white text-center p-tb-150">
+                        <div>
+                            <h1 class="display-2 fw-bold m-auto mb-2 font-roboto pb-4">Cast
+                                Your Vote for
+                                the
+                                Finest Candidates
+                            </h1>
+                            <p class="fs-4 font-nunito col-9 m-auto pb-4 mb-5">We fight for
+                                our citizen rights, so join
+                                us
+                                and make
+                                our country more beautiful & natural for all our citizen.
+                            </p>
+                            <button
+                                class="btn btn-danger fs-5 mb-5 px-4 py-3 fw-medium btn-campaign font-roboto position-relative z-2">Join
+                                The
+                                Campaign
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute img-hero">
+                <img src="./assets/images/hero-mosqque.png" alt="mosque" class="img-fluid w-100">
+            </div>
+        </section>
+
+        <!-- Contribution section -->
+        <section id="Contribution" class="background-color py-5">
+            <div class="container">
+                <div class="donate-wrapper bg-white p-5 rounded-4">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="do-contribution">
+                                <h1 class="font-roboto fw-bold mb-4">Get involved Contribution Make yourself Proud!</h1>
+                                <p class="font-nunito fs-18 text-secondary">At Politixy, we believe the transformative
+                                    power collective action. If you saved payment information with your donation will go
+                                    through immediately.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="donate-innner p-3">
+                                <ul class="donate-list mb-4 d-flex flex-wrap gap-2">
+                                    <li class="fs-4 fw-bold px-5 py-3">150$</li>
+                                    <li class="fs-4 fw-bold px-5 py-3">250$</li>
+                                    <li class="fs-4 fw-bold px-5 py-3">50$</li>
+                                    <li class="fs-4 fw-bold px-5 py-3">50$</li>
+                                    <li class="fs-4 fw-bold px-5 py-3">250$</li>
+                                    <li class="fs-4 fw-bold px-5 py-3">250%</li>
+                                    <li class="fs-4 fw-bold px-4 py-3">100%</li>
+                                    <li class="fs-4 fw-bold px-5 py-3">Other</li>
+                                </ul>
+                                <div class="px-2">
+                                    <button
+                                        class="btn btn-danger contribute-btn fw-medium py-3 fs-18 w-100 col-lg-12">Donate
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About us -->
+
+        <section id="about-us" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-text">
+                            <h6 class="text-danger fs-4 fw-bold mb-3">About us</h6>
+                            <h2 class="fw-bold mb-4 font-roboto display-5">Guiding Principles for Community Betterment
+                            </h2>
+                            <p class="fs-5 font-nunito text-secondary">To make sure all Citizen rights, you have to work
+                                together and make a better country for our child. So we have to take initiative proper
+                                way to ensure the all right and make the country better for living</p>
+                            <ul class="p-0 my-5">
+                                <li class="d-flex align-items-center gap-3">
+                                    <span class="fs-3"><i class="bi bi-check-circle"></i></span>
+                                    <p class="m-0 fs-5 fw-medium text-secondary">The biggest economic recovery plan in
+                                        the history of America.</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3">
+                                    <span class="fs-3"><i class="bi bi-check-circle"></i></span>
+                                    <p class="m-0 fs-5 fw-medium text-secondary">Millions of Americans gain the peace of
+                                        mind of insurance.</p>
+                                </li>
+                                <li class="d-flex align-items-center gap-3">
+                                    <span class="fs-3"><i class="bi bi-check-circle"></i></span>
+                                    <p class="m-0 fs-5 fw-medium text-secondary">The biggest economic recovery plan in
+                                        the history of America.</p>
+                                </li>
+                            </ul>
+                            <button class="btn btn-danger fs-5 py-3 contribute-btn mb-5 px-5 fw-medium font-roboto">About us</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-img position-relative">
+                            <img src="./assets/images/about-img.jfif" alt="chokri" class="img-fluid border rounded-4">
+                            <div class="position-absolute bg-white rounded-circle px-4 py-3 video-btn display-1">
+                                <a href="https://youtu.be/lfDZJqSrIuk?si=EiAhBz-ihSK_kecO" class="glightbox">
+                                    <span class="text-danger"><i class="bi bi-play-fill"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Campaign -->
+        <section id="join-campaign" class="py-5 background-color">
+            <div class="container">
+                <!-- Join campaign heading -->
+                <div class="row align-items-center justify-content-between mb-5">
+                    <div class="col-lg-7">
+                        <div class="join m-0">
+                            <h6 class="text-danger fw-bold font-nunito fs-3">Join Campaign</h6>
+                            <h2 class="display-5 font-roboto m-0 fw-bold">Support Humanity & Country</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div>
+                            <button class="btn btn-danger fs-18 contribute-btn fw-bold font-roboto d-flex justify-content-end px-4 py-3">All Campaign</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- join campaign heading end -->
+                
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/black-president.jfif" alt="president" class="img-fluid rounded-4 border-0">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="card-content">
+                                    <div class="d-flex">
+                                        <div class="blog-date">
+                                            <div class="date bg-danger">
+                                                <p class="text-white p-3 bor">20</p>
+                                            </div>
+                                            <div class="month">
+                                                <p class="text-white p-3">SEP</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- bootstrap js -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- glightbox js -->
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+    </script>
 </body>
 
 </html>

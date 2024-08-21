@@ -14,8 +14,16 @@
     font-family: "Nunito Sans", sans-serif;
 }
 
+.fs-18{
+    font-size: 18px;
+}
+
+.background-color{
+    background-color: #f9f9ff;
+}
+
 .contribute-btn:hover{
-    background-color: rgba(11, 2, 42, 0.797) !important;
+    background-color: #0b022acb !important;
 }
 
 .menus ul li a:hover{
@@ -41,4 +49,57 @@
     visibility: visible;
     width: 100%;
     left: 0;   
+}
+
+.hero-background{
+    background-image: url("../images/h-background.jfif");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.p-tb-150{
+    padding: 150px 0;
+}
+
+.img-hero{
+    top: 36%;
+}
+
+.donate-list li{
+    background-color: #EFEFF7;   
+    transition: 0.4s all linear;
+}
+
+.btn-campaign:hover{
+    background-color: #EFEFF7;
+    color: black;
+}
+
+.donate-list li:hover{
+    background-color: rgba(243, 12, 12, 0.947);
+    color: white;
+}
+
+.video-btn{
+    top: 40%;
+    left: 40%;
+}
+
+.card-img img{
+    max-height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blog-date{
+    height: 90px;
+}
+
+.month p{
+    margin-top: -16px;
+}
+
+.month{
+    background-color: rgb(25, 14, 78);
 }
