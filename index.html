@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- glightbox cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <!-- fancybox css -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css'>
+    <!-- media css -->
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <!-- swiper css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Bootstrap css -->
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- style css -->
@@ -19,7 +25,7 @@
 
 <body>
 
-    <header id="header">
+    <header id="header" class=" bg-white">
         <div class="container">
             <div class="header pt-3 pb-3 d-flex align-items-center justify-content-between">
                 <div class="logo">
@@ -145,19 +151,34 @@
                         </div>
                         <div class="col-lg-7">
                             <div class="donate-innner p-3">
-                                <ul class="donate-list mb-4 d-flex flex-wrap gap-2">
-                                    <li class="fs-4 fw-bold px-5 py-3">150$</li>
-                                    <li class="fs-4 fw-bold px-5 py-3">250$</li>
-                                    <li class="fs-4 fw-bold px-5 py-3">50$</li>
-                                    <li class="fs-4 fw-bold px-5 py-3">50$</li>
-                                    <li class="fs-4 fw-bold px-5 py-3">250$</li>
-                                    <li class="fs-4 fw-bold px-5 py-3">250%</li>
-                                    <li class="fs-4 fw-bold px-4 py-3">100%</li>
-                                    <li class="fs-4 fw-bold px-5 py-3">Other</li>
+                                <ul class="donate-list mb-4 d-flex p-0 flex-wrap">
+                                    <li class="fs-4 w-25 fw-bold">
+                                        <div class="d-flex align-items-center justify-content-center py-3">150$</div>
+                                    </li>
+                                    <li class="fs-4 w-25 fw-bold">
+                                        <div class="d-flex align-items-center justify-content-center py-3">250$</div>
+                                    </li>
+                                    <li class="fs-4 w-25 fw-bold">
+                                        <div class="d-flex align-items-center justify-content-center py-3">50$</div>
+                                    </li>
+                                    <li class="fs-4 w-25 fw-bold">
+                                        <div class="d-flex align-items-center justify-content-center py-3">50$</div>
+                                    </li>
+                                    <li class="fs-4 w-25 fw-bold">
+                                        <div class="d-flex align-items-center justify-content-center py-3">250$</div>
+                                    </li>
+                                    <li class="fs-4 w-25 fw-bold">
+                                        <div class="d-flex align-items-center justify-content-center py-3">250%</div>
+                                    </li>
+                                    <li class="fs-4 w-25 fw-bold">
+                                        <div class="d-flex align-items-center justify-content-center py-3">100%</div>
+                                    </li>
+                                    <li class="fs-4 w-25 fw-bold">
+                                        <div class="d-flex align-items-center justify-content-center py-3">Other</div>
+                                    </li>
                                 </ul>
-                                <div class="px-2">
-                                    <button
-                                        class="btn btn-danger contribute-btn fw-medium py-3 fs-18 w-100 col-lg-12">Donate
+                                <div class="">
+                                    <button class="btn p-0 btn-danger contribute-btn fw-medium py-3 fs-18 w-100 col-lg-12">Donate
                                         Now</button>
                                 </div>
                             </div>
@@ -197,7 +218,9 @@
                                         the history of America.</p>
                                 </li>
                             </ul>
-                            <button class="btn btn-danger fs-5 py-3 contribute-btn mb-5 px-5 fw-medium font-roboto">About us</button>
+                            <button
+                                class="btn btn-danger fs-5 py-3 contribute-btn mb-5 px-5 fw-medium font-roboto">About
+                                us</button>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -227,29 +250,172 @@
                     </div>
                     <div class="col-lg-3">
                         <div>
-                            <button class="btn btn-danger fs-18 contribute-btn fw-bold font-roboto d-flex justify-content-end px-4 py-3">All Campaign</button>
+                            <button
+                                class="btn btn-danger fs-18 contribute-btn fw-bold font-roboto d-flex justify-content-end px-4 py-3">All
+                                Campaign</button>
                         </div>
                     </div>
                 </div>
                 <!-- join campaign heading end -->
-                
+
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="card">
                             <div class="card-img">
-                                <img src="./assets/images/black-president.jfif" alt="president" class="img-fluid rounded-4 border-0">
+                                <img src="./assets/images/black-president.jfif" alt="president"
+                                    class="img-fluid rounded-4 border-0">
                             </div>
                             <div class="card-body p-4">
                                 <div class="card-content">
-                                    <div class="d-flex">
+                                    <div class="d-flex gap-4">
                                         <div class="blog-date">
-                                            <div class="date bg-danger">
-                                                <p class="text-white p-3 bor">20</p>
+                                            <div class="date bg-danger rounded-top">
+                                                <p class="text-white p-3 m-0 fw-bold fs-5">20</p>
                                             </div>
-                                            <div class="month">
-                                                <p class="text-white p-3">SEP</p>
+                                            <div class="month rounded-bottom">
+                                                <p class="text-white p-3 m-0 fs-5 fw-bold">SEP</p>
                                             </div>
                                         </div>
+                                        <div class="">
+                                            <h5 class="fs-3 font-roboto fw-semibold">Human Rights are Important</h5>
+                                            <ul class="d-flex gap-3 m-0 p-0">
+                                                <li class="extra-small">
+                                                    <span class="text-secondary"><i class="bi bi-clock"></i></span>
+                                                    <span class="text-secondary">3:00PM - 8:00PM</span>
+                                                </li>
+                                                <li class="extra-small text-secondary">
+                                                    <span><i class="bi bi-geo-alt"></i></span>
+                                                    <span>California</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <p class="fs-5 text-secondary fw-medium font-nunito">
+                                            Through various outreach programs we have connect with communitie the
+                                            nation.
+                                        </p>
+                                    </div>
+                                    <div class="progress-item font-nunito">
+                                        <div class="progress" role="progressbar" aria-label="Info example"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar month text-white" style="width: 50%">50%</div>
+                                        </div>
+                                        <p class="d-flex mt-5 gap-5 text-secondary">
+                                            <span class="fs-18">Goal: $40,000.00</span>
+                                            <span class="fs-18">Goal: $40,000.00</span>
+                                        </p>
+                                        <button
+                                            class="btn btn-danger contribute-btn fw-medium py-3 fs-18 w-100 col-lg-12">Donate
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/raise voice women.jpg" alt="president"
+                                    class="img-fluid rounded-4 border-0">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="card-content">
+                                    <div class="d-flex gap-4">
+                                        <div class="blog-date">
+                                            <div class="date bg-danger rounded-top">
+                                                <p class="text-white p-3 m-0 fw-bold fs-5">20</p>
+                                            </div>
+                                            <div class="month rounded-bottom">
+                                                <p class="text-white p-3 m-0 fs-5 fw-bold">SEP</p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <h5 class="fs-3 font-roboto fw-semibold">Human Rights are Important</h5>
+                                            <ul class="d-flex gap-3 m-0 p-0">
+                                                <li class="extra-small">
+                                                    <span class="text-secondary"><i class="bi bi-clock"></i></span>
+                                                    <span class="text-secondary">3:00PM - 8:00PM</span>
+                                                </li>
+                                                <li class="extra-small text-secondary">
+                                                    <span><i class="bi bi-geo-alt"></i></span>
+                                                    <span>California</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <p class="fs-5 text-secondary fw-medium font-nunito">
+                                            Through various outreach programs we have connect with communitie the
+                                            nation.
+                                        </p>
+                                    </div>
+                                    <div class="progress-item font-nunito">
+                                        <div class="progress" role="progressbar" aria-label="Info example"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar month text-white" style="width: 50%">50%</div>
+                                        </div>
+                                        <p class="d-flex mt-5 gap-5 text-secondary">
+                                            <span class="fs-18">Goal: $40,000.00</span>
+                                            <span class="fs-18">Goal: $40,000.00</span>
+                                        </p>
+                                        <button
+                                            class="btn btn-danger contribute-btn fw-medium py-3 fs-18 w-100 col-lg-12">Donate
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="./assets/images/america raise voice.jpg" alt="president"
+                                    class="img-fluid rounded-4 border-0">
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="card-content">
+                                    <div class="d-flex gap-4">
+                                        <div class="blog-date">
+                                            <div class="date bg-danger rounded-top">
+                                                <p class="text-white p-3 m-0 fw-bold fs-5">20</p>
+                                            </div>
+                                            <div class="month rounded-bottom">
+                                                <p class="text-white p-3 m-0 fs-5 fw-bold">SEP</p>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <h5 class="fs-3 font-roboto fw-semibold">Human Rights are Important</h5>
+                                            <ul class="d-flex gap-3 m-0 p-0">
+                                                <li class="extra-small">
+                                                    <span class="text-secondary"><i class="bi bi-clock"></i></span>
+                                                    <span class="text-secondary">3:00PM - 8:00PM</span>
+                                                </li>
+                                                <li class="extra-small text-secondary">
+                                                    <span><i class="bi bi-geo-alt"></i></span>
+                                                    <span>California</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <p class="fs-5 text-secondary fw-medium font-nunito">
+                                            Through various outreach programs we have connect with communitie the
+                                            nation.
+                                        </p>
+                                    </div>
+                                    <div class="progress-item font-nunito">
+                                        <div class="progress" role="progressbar" aria-label="Info example"
+                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar month text-white" style="width: 50%">50%</div>
+                                        </div>
+                                        <p class="d-flex mt-5 gap-5 text-secondary">
+                                            <span class="fs-18">Goal: $40,000.00</span>
+                                            <span class="fs-18">Goal: $40,000.00</span>
+                                        </p>
+                                        <button
+                                            class="btn btn-danger contribute-btn fw-medium py-3 fs-18 w-100 col-lg-12">Donate
+                                            Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -258,18 +424,257 @@
                 </div>
             </div>
         </section>
+
+        <!-- Watch and Share section -->
+        <section id="Watch-and-share" class="py-5">
+            <div class="container">
+                <div class="heading-text text-center">
+                    <h6 class="text-danger  fs-4 mb-3 font-nunito fw-bold">Watch and Share</h6>
+                    <h2 class="fs-1 font-roboto  fw-bold mb-3">Our First Campaign Video</h2>
+                    <p class="fs-5 font-nunito fw-medium text-secondary">Joe and Kamala are running for re-election, and
+                        we need your help to spread the word. Share this video with your friends!</p>
+                </div>
+            </div>
+            <div class="month">
+                <div class="row align-items-center g-0">
+                    <div class="col-lg-6">
+                        <div class="about-img position-relative">
+                            <img src="./assets/images/american-man.jfif" alt="chokri" class="img-fluid">
+                            <div class="position-absolute bg-white rounded-circle px-4 py-3 video-btn display-1">
+                                <a href="https://youtu.be/lfDZJqSrIuk?si=EiAhBz-ihSK_kecO" class="glightbox">
+                                    <span class="text-danger"><i class="bi bi-play-fill"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="video-description d-flex gap-3 p-5">
+                            <span class="text-secondary display-1"><i class="bi bi-quote"></i></span>
+                            <div class="v-d-inner text-white mt-5">
+                                <p class="fs-5 video-text">
+                                    In the journey of life, where challenges abound and uncertainties loom, essence of
+                                    true empowerment lies not merely in the absence of obstacles but the strengt to
+                                    overcome them. As we navigate the complexities of our individual paths, are often
+                                    reminded that resilience is the heartbeat of empowerment a force tpropel us forward,
+                                    transforms setbacks into opportunities, and allows us to rise from adversity with
+                                    newfound strength and wisdom.
+                                </p>
+                                <div class="author-info">
+                                    <img src="./assets/images/author-sign.png" alt="author-sign" class="mt-4">
+                                    <h2 class="mt-4">David M.Smith</h2>
+                                    <p class="text-secondary fs-4 mt-4">Candidate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="Testimonials" class="py-5 background-color">
+            <div class="container">
+                <div class="heading-text text-center">
+                    <h6 class="text-danger  fs-4 mb-3 font-nunito fw-bold">Testimonials</h6>
+                    <h2 class="fs-1 font-roboto  fw-bold mb-3">What People Are Saying About Us</h2>
+                    <p class="fs-5 font-nunito fw-medium text-secondary">These testimonials reflect the positive impact
+                        Empower Politics is making on individuals and communities alike.</p>
+                </div>
+                <div class="swiper mySwiper mt-5">
+                    <div class="swiper-wrapper mb-5">
+                        <div class="swiper-slide">
+                            <div class="testimonials bg-white p-5">
+                                <div class="d-flex gap-4">
+                                    <div class="testimonials-img">
+                                        <img src="./assets/images/testimonial-author-image-1.jpg"
+                                            alt="testimonial-author-image-1" class="img-fluid">
+                                    </div>
+                                    <div class="testimonials-content">
+                                        <p class="font-roboto text-secondary fs-5 fw-medium">
+                                            They've become more informed, mopassionate, and more engaged citizens, thank
+                                            to resource and opportunities provided organization.
+                                        </p>
+                                        <div class="mt-5">
+                                            <h6 class="font-roboto fs-4 fw-semibold">Roshan V.Sharma</h6>
+                                            <p class="text-secondary fs-5 fw-semibold">As a Teacher</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials bg-white p-5">
+                                <div class="d-flex gap-4">
+                                    <div class="testimonials-img">
+                                        <img src="./assets/images/testimonial-author-image-1.jpg"
+                                            alt="testimonial-author-image-1" class="img-fluid">
+                                    </div>
+                                    <div class="testimonials-content">
+                                        <p class="font-roboto text-secondary fs-5 fw-medium">
+                                            They've become more informed, mopassionate, and more engaged citizens, thank
+                                            to resource and opportunities provided organization.
+                                        </p>
+                                        <div class="mt-5">
+                                            <h6 class="font-roboto fs-4 fw-semibold">Roshan V.Sharma</h6>
+                                            <p class="text-secondary fs-5 fw-semibold">As a Teacher</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonials bg-white p-5">
+                                <div class="d-flex gap-4">
+                                    <div class="testimonials-img">
+                                        <img src="./assets/images/testimonial-author-image-1.jpg"
+                                            alt="testimonial-author-image-1" class="img-fluid">
+                                    </div>
+                                    <div class="testimonials-content">
+                                        <p class="font-roboto text-secondary fs-5 fw-medium">
+                                            They've become more informed, mopassionate, and more engaged citizens, thank
+                                            to resource and opportunities provided organization.
+                                        </p>
+                                        <div class="mt-5">
+                                            <h6 class="font-roboto fs-4 fw-semibold">Roshan V.Sharma</h6>
+                                            <p class="text-secondary fs-5 fw-semibold">As a Teacher</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery section -->
+        <section id="gallery-section" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="section-heading col-lg-12 justify-content-between align-items-end">
+                        <div class="section-text">
+                            <h6 class="text-danger fs-4 fw-bold">Gallery</h6>
+                            <h2 class="display-5 font-roboto fw-bold">This is Our Gallery Check it Out.</h2>
+                            <p class="font-nunito fs-5 fw-medium text-secondary">
+                                By adhering to this vision and mission, we are committed to making a positive difference
+                                in the lives of the people we serve and building a brighter future for our society.
+                            </p>
+                        </div>
+                        <div class="section-btn mb-4">
+                            <button class="btn btn-danger py-3 px-4 fs-5 fw-bold">View All</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-lg-7 mb-4">
+                        <div class="politixy-img">
+                            <a href="./assets/images/refugges.jpg" data-fancybox="gallery">
+                                <img src="./assets/images/refugges.jpg" alt="Image gallery" class="img-fluid rounded-4">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mb-4">
+                        <div class="politixy-img refuge-man">
+                            <a href="./assets/images/gallery-man.jpg" data-fancybox="gallery">
+                                <img src="./assets/images/gallery-man.jpg" alt="Image gallery" class="img-fluid rounded-4">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mb-4">
+                        <div class="politixy-img">
+                            <a href="./assets/images/public-img.jpg" data-fancybox="gallery">
+                                <img src="./assets/images/public-img.jpg" alt="Image gallery" class="img-fluid rounded-4">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 mb-4">
+                        <div class="politixy-img refuge-man-1">
+                            <a href="./assets/images/gallery-4.jpg" data-fancybox="gallery">
+                                <img src="./assets/images/gallery-4.jpg" alt="Image gallery" class="img-fluid rounded-4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- jquery cdn -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <!-- swiper js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- bootstrap js -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- fancybox js cdn -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js'></script>
     <!-- glightbox js -->
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script>
+        // Glight box 
         const lightbox = GLightbox({
             touchNavigation: true,
             loop: true,
             autoplayVideos: true
         });
+
+        // header sticky
+        $(window).scroll(function () {
+            if (scrollY > 300) {
+                $("header").addClass("sticky")
+            } else {
+                $("header").removeClass("sticky")
+            }
+        })
+
+        // Swiper slider initialise
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            loop: true,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        // Fancybox Config
+        $('[data-fancybox="gallery"]').fancybox({
+            buttons: [
+                "slideShow",
+                "thumbs",
+                "zoom",
+                "fullScreen",
+                "share",
+                "close",
+            ],
+            loop: true,
+            protect: true
+        });
+
     </script>
 </body>
 

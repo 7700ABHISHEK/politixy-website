@@ -67,8 +67,11 @@
 }
 
 .donate-list li{
-    background-color: #EFEFF7;   
+    padding: 10px 10px;
+}
+.donate-list li div{
     transition: 0.4s all linear;
+    background-color: #EFEFF7;
 }
 
 .btn-campaign:hover{
@@ -76,7 +79,7 @@
     color: black;
 }
 
-.donate-list li:hover{
+.donate-list li div:hover{
     background-color: rgba(243, 12, 12, 0.947);
     color: white;
 }
@@ -90,16 +93,72 @@
     max-height: 250px;
     object-fit: cover;
     width: 100%;
+    transition: 0.4s all linear;
 }
 
 .blog-date{
     height: 90px;
 }
 
-.month p{
-    margin-top: -16px;
-}
-
 .month{
     background-color: rgb(25, 14, 78);
+}
+
+.extra-small{
+    font-size: 12px;
+}
+
+.progress{
+    height: 7px;
+}
+
+.card-img img:hover{
+    transform: scale(1.01,1.01);
+}
+
+.v-d-inner{
+    line-height: 30px;
+}
+
+.sticky{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
+    left: 0;
+    animation: fadeInDown .7s ease-in-out 0s 1 normal none running;
+    transition: all .3s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -30%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.testimonials-img{
+    width: 250px;
+}
+
+.testimonials-img img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.refuge-man a img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.refuge-man-1 a img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
 }

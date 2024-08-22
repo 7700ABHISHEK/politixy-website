@@ -1,0 +1,34 @@
+@media (max-width:1399.98px) {
+    .video-description .video-text{
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:1325px) {
+    .refuge-man a img{
+        height: 430px !important;
+    }
+
+    .refuge-man-1 a img{
+        height: 260px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .donate-list li{
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .donate-list li{
+        width: 100% !important;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+}
