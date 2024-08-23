@@ -162,3 +162,137 @@
     width: 100%;
     object-fit: cover;
 }
+
+.volunteer-wrapper{
+    background-image: url("../images/happy.jpeg");
+    z-index: 4;
+    opacity: 1;
+    background-position: center ;
+}
+
+.volunteer-wrapper::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 14, 78, 0.96);
+    opacity: 0.97;
+    z-index: 1;
+}
+
+.padding-tb-60{
+    padding: 60px 16px;
+}
+
+.politixy-img{
+    overflow: hidden;
+}
+
+.politixy-img a img{
+    transition: 0.2s all linear;
+}
+
+.politixy-img a img:hover{
+    transform: scale(1.1,1.1);
+} 
+
+.form-control{
+    padding: 14.5px 24px;
+}
+
+.bread-crumb{
+    background-image: url("../images/america-flag.jpeg");
+    background-position: center;
+    position: relative;
+}
+
+.bread-crumb::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(25, 14, 78);
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.pad-tb-120{
+    padding: 120px 0;
+}
+
+.breadcrumb-item::before{
+    color: white !important;
+}
+
+#portfolio-filters li {
+    cursor: pointer;
+    color: #999999;
+    transition: all 0.3s ease-in-out;
+}
+
+#portfolio-filters li:first-child:active {
+    color: #b8a07e;
+}
+
+#portfolio-filters li:hover {
+    color: #b8a07e;
+}
+
+.portfolio-container {
+    height: 594px;
+}
+
+.portfolio-info {
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 60%;
+    left: 25px;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+
+.portfolio-items {
+    margin-bottom: 30px;
+    border: none !important;
+}
+
+.portfolio-items:hover .portfolio-info {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+.yoga img{
+    height: 625px;
+}
+
+.input-1 {
+    width: 100%;
+}
+
+.input-1 {
+    background-color: transparent;
+    border: 1px solid #999;
+    border-radius: 0;
+    color: #999999;
+    font-size: 12px;
+    font-weight: 500;
+    height: 50px;
+    letter-spacing: 0.1em;
+    padding-left: 10px;
+    margin: 0 0 25px 0;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+.form-control-1 {
+    min-height: 160px;
+    border: 1px solid #999;
+    border-radius: 0;
+}
